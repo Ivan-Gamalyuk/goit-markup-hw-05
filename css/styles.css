@@ -72,6 +72,7 @@ color: #212121;
     .header-list {
       display: flex;
     }
+
     .header-nav {
       display: flex;
       align-items: center;
@@ -88,7 +89,20 @@ color: #212121;
     
     color: var(--header-color);
   }
-
+  .header-list::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 48px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--btn-color)
+    
+  }
+    
+  
+  
   .header-item {
   margin-right: 50px;
 
@@ -96,6 +110,7 @@ color: #212121;
   .header-item:last-child {
     margin-right: 0;
   }
+  
   .header-mail {
       
   font-weight: 500;
@@ -173,7 +188,8 @@ color: #212121;
     color: var(--btn-color);
 
   }
-                                         /*main*/
+                                        /*main*/
+
   .business{
   background: #2F303A;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -294,6 +310,29 @@ color: #FFFFFF;
     margin-right: 30px;
 
   } 
+  .work-pre-list{
+    display: flex;
+    
+  }
+  .work-pre-item {
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    margin-right: 30px;
+  }
+  .work-pre-item:last-child {
+    margin-right: 0px;
+  }
+  .pre-text {
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+margin-top: 27px;
+  }
   
   .hero {
     background: #F5F4FA;
@@ -598,6 +637,5 @@ rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     
     color: var(--text-color);
   }    
-  
   
   

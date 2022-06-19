@@ -74,7 +74,7 @@ color: #212121;
     }
     .curent::after{
       position: absolute;
-      /* left: 0; */
+      
       bottom: -1px;
       content: "";
       display: block;
@@ -82,7 +82,7 @@ color: #212121;
       height: 4px;
       background-color: #2196F3;
       border-radius: 2px;
-      /* top: 45px; */
+      
       }
     .header-nav {
       display: flex;

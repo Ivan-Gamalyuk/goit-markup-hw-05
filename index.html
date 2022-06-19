@@ -19,7 +19,7 @@
     <a class="logo link" href="" lang="en">Web<span class="logo-accent">Studio</span></a>
     
     <ul class="header-list list"> 
-        <li class="header-item"><a href="./index.html" class="header-link link studia ">Студия</a></li>
+        <li class="header-item"><a href="./index.html" class="header-link link studia curent ">Студия</a></li>
         <li class="header-item"><a href="./portfolio.html" class="header-link link portfolio">Портфолио</a></li>
         <li class="header-item"><a href="" class="header-link link contacts">Контакты</a></li>
     </ul>
@@ -44,7 +44,7 @@
 <section class="business">
     <div class="container">
         <h1 class="main-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="business-btn">Заказать услугу</button>
+        <button type="button" class="business-btn" data-modal-open>Заказать услугу</button>
     </div>
 </section>
 <section class="option">
@@ -82,19 +82,19 @@
     <ul class="option-list list">
     <li class="option-item "> 
         <h3 class="option-item-title ">Внимание к деталям</h3>
-    <p class="option-iyem-text">Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
+    <p class="option-item-text">Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
 </li>
     <li class="option-item">
         <h3 class="option-item-title">Пунктуальность </h3>
-    <p class="option-iyem-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+    <p class="option-item-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
 </li>
     <li class="option-item">
         <h3 class="option-item-title">Планирование</h3>
-    <p class="option-iyem-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+    <p class="option-item-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
 </li>
     <li class="option-item">
         <h3 class="option-item-title">Современные технологии</h3>
-    <p class="option-iyem-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+    <p class="option-item-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
 </li>
 </ul>
 </div>
@@ -102,22 +102,25 @@
 <section class="work">
 <div class="container">
 <h2 class="work-title">Чем мы занимаемся</h2>
-
 <ul class="work-list list">
-    
-    <li class="work-item"><img src="img/cod.jpg" alt="верстка" width="370" height="294" class="work-pict"> </li>
-<li class="work-item"> <img src="img/telephone.jpg" alt="верстка" width="370" height="294"  class="work-pict"></li>
-<li class="work-item"><img src="img/laptop.jpg" alt="верстка" width="370" height="294" class="work-pict"></li>
-</ul>
-<ul class="work-pre-list list">
-    <li class="work-pre-item">
-        <p class="pre-text">Десктопные приложения</p>
+    <li class="work-item">
+        <div class="thumb list">
+            <img src="img/cod.jpg" alt="верстка" width="370" height="294" class="work-pict">
+            <p class="pre-text">Десктопные приложения</p> 
+        </div>
     </li>
-    <li class="work-pre-item">
-        <p class="pre-text">Мобильные приложения</p>
+        
+    <li class="work-item">
+        <div class="thumb">
+            <img src="img/telephone.jpg" alt="верстка" width="370" height="294"  class="work-pict">
+            <p class="pre-text">Мобильные приложения</p>
+        </div>
     </li>
-    <li class="work-pre-item">
-        <p class="pre-text">Дизайнерские решения</p>
+    <li class="work-item">
+        <div class="thumb">
+            <img src="img/laptop.jpg" alt="верстка" width="370" height="294" class="work-pict">
+            <p class="pre-text">Дизайнерские решения</p>
+        </div>
     </li>
 </ul>
 </div>
@@ -331,7 +334,16 @@
         </ul>
     </div>
     </div>
-    </footer> 
-
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="window-btn" data-modal-close>
+                <svg class="close-icon" width="11" height="11">
+                    <use href="/img/close.svg#icon-Vector-2-1"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./jc/modal.js"></script>
 </body>
 </html>

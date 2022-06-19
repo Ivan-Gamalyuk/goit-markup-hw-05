@@ -740,3 +740,6 @@ rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     visibility: hidden;
     pointer-events: none;
   }
+  .close-icon {
+    fill: #000;
+  }
